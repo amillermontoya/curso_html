@@ -1,0 +1,268 @@
+<!--HTML5-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!--Codificacion-->
+    <meta name="viewport" content="width=device-width" />
+    <!--tomar resolucion del dispositivo -->
+    <title>
+      🧑‍💻 Portofolio Adams Miller - Ingeniero de Software con 5 años de
+      experiencia
+    </title>
+    <meta
+      name="description"
+      content="Portfolio Adams Miller, 5 años de experiencia como Ingeniero de Software"
+    />
+
+    <!--OPEN GRAPH-->
+    <meta
+      property="org:title"
+      content="Portfolio de un ingeniero de software"
+    />
+    <meta
+      property="org:description"
+      content="Portofolio Adams Miller - Ingeniero de Software con 5 años de experiencia"
+    />
+    <meta property="org:image" content="/images/yo.jpg" />
+    <meta
+      property="org:image:alt"
+      content="Fotografía de Adams Miller para su CV"
+    />
+
+    <link rel="alternate" href="https://amillerm.dev/en" hreflang="es-GB" />
+    <!--www.amillerm.dev o amillerm.dev-->
+    <link rel="canonical" href="https://amillerm.dev" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#8f7ada" />
+    <link rel="icon" type="image/jpg" href="/images/yo.jpg" />
+    <style>
+      body {
+        background: rgba(173, 207, 221, 0.9);
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Portfolio de @AdamsMiller 🧑‍💻</h1>
+      <nav>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+        <a
+          href="https://www.linkedin.com/in/adams-miller-montoya-2a14b2193/"
+          target="_blank"
+          rel="noreferrer"
+          >LinkeIn</a
+        >
+      </nav>
+    </header>
+    <dialog id="dialog">
+        <h1>¿Sabias que puedes abrir una modal asi?</h1>
+        <p>¡Y es totalmente nativo</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+    <button id="show">Ver más información</button>
+
+    <script>
+        window.show.addEventListener('click',()=>{
+            window.dialog.showModal()
+        })
+        window.hide.addEventListener('click',()=>{
+            window.dialog.close()
+        })
+    </script>
+
+    <main>
+      <!--Comentario-->
+      <p>
+        +5 años de experiencia como <string>Ingeniero de Software</string>.
+        Docente de programación en Aiep
+      </p>
+
+      <h2 id="experiencia">Experiencias</h2>
+      <ul>
+        <li class="list-item">RipleyTech - 2023</li>
+        <li class="list-item">Moofwd - 2021</li>
+        <li class="list-item">Cesmec - 2019</li>
+      </ul>
+      <a href="images/yo.jpg">
+        <img
+          id="photo-image"
+          width="200"
+          height="200"
+          title="Foto Adams Miller"
+          alt="Fotografía de Adams Miller"
+          src="images/yo.jpg"
+        />
+      </a>
+      <h2 id="proyectos">Proyectos Realizados</h2>
+      <aside>
+        <header>
+          <h3>Mis tecnologías favoritas</h3>
+        </header>
+        <ol>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Java</li>
+        </ol>
+      </aside>
+      <section>
+        <article>
+          <header>
+            <h4>Sitio Web Corporativo</h4>
+          </header>
+          <p>
+            Desarrollo de un sitio web corporativo con una interfaz amigable y
+            moderna
+          </p>
+          <footer>
+            <small> Tecnologías usadas: HTML, CSS, JavaScript. </small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Aplicación Web Sistema de Cuadratura</h4>
+          </header>
+          <p>
+            Migración del sistema de cuadratura de Ripley de Chile, donde la
+            área especializada cuadra las ventas del día.
+          </p>
+          <footer>
+            <small>
+              Tecnologías usadas: React, Node js, Java, Oracle, MongoDB.
+            </small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Proyecto Pago en Tienda (PET)</h4>
+          </header>
+          <p>
+            Proyecto que busca realizar un pago en tienda dentro de la tiendas
+            fisicas de Ripley tanto en Chile como Perú
+          </p>
+          <footer>
+            <small>
+              Tecnologías usadas: React, Node js, Kafka, Oracle, MongoDB.
+            </small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>API Notas de Crédito</h4>
+          </header>
+          <p>
+            Creación de una restfull para ser consultada de una terminal POS
+            para saber si el cliente tiene articulos disponibles para
+            devolución.
+          </p>
+          <footer>
+            <small> Tecnologías usadas: Java, Oracle. </small>
+          </footer>
+        </article>
+      </section>
+
+      <section>
+        <h2>Preguntas Frecuentes</h2>
+        <details>
+            <summary>¿Qué estudios tienes?</summary>
+            <p>Estudie en la Universidad Tencologica de Chile (Inacap) una Ingenieria en Informática con grado en Licenciado en Informática.</p>
+        </details>
+        <details>
+            <summary>¿Cuáles son tus hoobies?</summary>
+            <p>Me gusta mucho el deporte, sobre todo el fútbol y el voleibol.</p>
+        </details>
+      </section>
+      <section>
+        <h2 id="contacto">Formulario de contacto</h2>
+        <form method="post" action="/">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+                <label
+                >Nombre:
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Adams Miller"
+                  required
+                >
+              </label>
+            </div>
+            <div>
+                <label
+                >Correo:
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="amillermontoya@gmail.com"
+                  required
+                >
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Información Adicional</legend>
+            <div>
+                <label
+                >Telefono:
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+569 XXXX XXXX"
+                  pattern="[0-9]{9}"
+                  required
+                >
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+                <label for="why">¿Por qué quieres contactar?</label>
+                <select name="why" id="why">
+                    <option value="1">Trabajo</option>
+                    <option value="2">Duda</option>
+                    <option value="3">Más Información</option>
+                </select>
+            </div>
+            <div>
+                <label for="terms">¿Aceptas los términos?</label>
+                <input type="checkbox" id="terms" name="terms" required
+            </div>
+            <div>
+                <datalist id="languages">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Pyhton">Pyhton</option>
+                    <option value="Java">Java</option>
+                    <option value="React">React</option>
+                </datalist>
+                <label>
+                    ¿Con qué lenguaje quieres que te ayude?
+                    <input list="languages" name="languages">
+                </label>
+            </div>
+          </fieldset>
+          <button>Enviar Contacto</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      Copyright ©️ 2025.
+      <a href="mailto:amillermontoya@gmail.com">Enviame un correo</a>
+      <a
+        href="https://api.whatsapp.com/send?text=hola%20Adams&phone=+56966811157"
+        >Contacto por whatsapp</a
+      >
+    </footer>
+  </body>
+</html>
