@@ -38,8 +38,60 @@
     <meta name="theme-color" content="#8f7ada" />
     <link rel="icon" type="image/jpg" href="/images/yo.jpg" />
     <style>
+      h1{
+        /*color: rgba(0,0,0, 50%); legacy */
+        /*color: rgb(0 0 0 /50%); */
+        /*color: hsl(60, 1%, 41%); */
+        /*color: transparent;*/
+        /*color: oklch(348 83% 44% /50%);*/
+        /*border-width: 3px;
+        border-style: solid;
+        border-color: currentColor; /*obtiene el color del elem padre*/
+        color: #09f; /* 0099ff*/
+        }
       body {
-        background: rgba(173, 207, 221, 0.9);
+        background: rgba(172, 202, 215, 0.9);
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      a{
+        color: red;
+      }
+      .link{
+        color:chocolate
+      }
+      /*Pseudo-clase*/
+      .link:hover {
+        /*border:5px solid red;*/
+        outline: 10px solid violet;
+        color: blueviolet;
+      }
+      .link:active{
+        outline: 10px solid blue;
+      }
+      .link:focus {
+        border:10px solid yellow;
+      }
+      li:first-child{
+        color:rgb(245, 0, 41);
+      }
+      li:last-child{
+        color: coral;
+      }
+      /*Selectores combinados*/
+      
+      /*Pseudo-estado*/
+
+
+
+
+
+      #show{
+        background: #09f;
+        color: white;
+      }
+
+      .description {
+        border:  1px solid red;
       }
     </style>
   </head>
@@ -48,10 +100,10 @@
     <header>
       <h1>Portfolio de @AdamsMiller 🧑‍💻</h1>
       <nav>
-        <a href="#experiencia">Experiencia</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-        <a
+        <a class="link" href="#experiencia">Experiencia</a>
+        <a class="link" href="#proyectos">Proyectos</a>
+        <a class="link" href="#contacto">Contacto</a>
+        <a class="link"
           href="https://www.linkedin.com/in/adams-miller-montoya-2a14b2193/"
           target="_blank"
           rel="noreferrer"
@@ -77,7 +129,7 @@
 
     <main>
       <!--Comentario-->
-      <p>
+      <p class="description">
         +5 años de experiencia como <string>Ingeniero de Software</string>.
         Docente de programación en Aiep
       </p>
